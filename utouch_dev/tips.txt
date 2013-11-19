@@ -1,0 +1,2 @@
+pstree replacement:
+	ps -auwxf
