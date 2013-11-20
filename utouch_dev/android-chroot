@@ -1,0 +1,22 @@
+#!/bin/sh
+# android-chroot, exists in saucy but seems removed in trusty.
+# package: lxc-android-config 0.114
+
+pid=$(lxc-info -n android|grep ^pid|sed 's/^pid: .* //')
+cmd=sh
+
+PATH="/system/bin:/vendor/bin:$PATH"
+LD_LIBRARY_PATH=/vendor/lib:/system/lib
+ANDROID_CACHE=/cache
+ANDROID_DATA=/data
+ANDROID_ROOT=/system
+ANDROID_ASSETS=/system/app
+EXTERNAL_STORAGE=/mnt/sdcard
+LOOP_MOUNTPOINT=/mnt/obb
+ASEC_MOUNTPOINT=/mnt/asec
+SHLVL=1
+MKSH=/system/bin/sh
+
+[ -n "$1" ] && cmd=$1 shift
+
+chroot /proc/$pid/root/ $cmd "$@"
