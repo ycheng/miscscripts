@@ -2,7 +2,11 @@
 # android-chroot, exists in saucy but seems removed in trusty.
 # package: lxc-android-config 0.114
 
+# origional saucy
 pid=$(lxc-info -n android|grep ^pid|sed 's/^pid: .* //')
+# for trusty
+pid=$(lxc-info -n android|grep ^pid|sed 's/^pid: \t//')
+
 cmd=sh
 
 PATH="/system/bin:/vendor/bin:$PATH"
