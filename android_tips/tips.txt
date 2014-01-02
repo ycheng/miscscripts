@@ -1,0 +1,7 @@
+
+Q. `adb devices` can't see my device ?
+
+A.
+    1. dmesg to check device usb vendor id
+    2. edit ~/.android/adb_usb.ini, add 0x2207 at the end of the file
+    3. probably start adb server with root.
