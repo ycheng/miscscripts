@@ -1,0 +1,6 @@
+
+- Dropbox not show on indicator
+	sudo apt-get install libappindicator1
+
+- Synology Cloud Station
+	sudo apt-get install qdbus-qt5
