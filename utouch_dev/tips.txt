@@ -1,2 +1,8 @@
 pstree replacement:
 	ps -auwxf
+
+become phablet
+	sudo -i -H -u phablet
+
+show ubuntu image version
+	system-image-cli --info
