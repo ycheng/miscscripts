@@ -1,0 +1,8 @@
+
+Q: can't monitor method call in system bus
+
+A:
+    put system-local.conf in /etc/dbus-1/ and reload dbus to monitor method call
+    in system bus
+
+    ref: https://wiki.ubuntu.com/DebuggingDBus

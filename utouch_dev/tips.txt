@@ -6,3 +6,9 @@ become phablet
 
 show ubuntu image version
 	system-image-cli --info
+
+mount root as rw
+	mount -o rw,remount /
+
+display mir or not
+	/home/phablet/.display-mir
