@@ -4,7 +4,7 @@ sleep 1
 adb shell mkdir $BINDIR
 
 # strace binary from trusty deb
-adb push bin/strace $BINDIR
+adb push bin/strace /usr/bin/
 adb push env.sh /root/
 
 # adb push adb-profile.sh $DEVDIR

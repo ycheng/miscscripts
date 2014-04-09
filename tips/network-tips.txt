@@ -1,0 +1,3 @@
+
+netstat -tulpn
+	list all port and it's process
