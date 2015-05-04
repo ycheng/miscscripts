@@ -1,0 +1,14 @@
+
+Snappy:
+
+	$ snappy info # what core we live in
+	$ snappy list -uv # what componeent installed
+	$ snappy search webserver
+	$ snappy search docker
+	$ sudo snappy install docker
+
+	Ubuntu core
+
+	$ sudo snappy update ubuntu-core # need reboot to run new
+	$ snappy list -v
+	$ sudo snappy rollback ubuntu-core # need reboot to run old
