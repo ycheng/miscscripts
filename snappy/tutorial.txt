@@ -12,3 +12,10 @@ Snappy:
 	$ sudo snappy update ubuntu-core # need reboot to run new
 	$ snappy list -v
 	$ sudo snappy rollback ubuntu-core # need reboot to run old
+
+path:
+
+	/apps/<pkgname>/
+	/apps/bin
+	/var/lib/apps/<pkgname>/current/
+	/home/$USER/apps/<pkgname>/current/

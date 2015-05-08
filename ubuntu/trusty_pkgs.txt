@@ -3,8 +3,10 @@ Standard:
 	apt-get install git gitk vim zim xchat \
 		bzr bzr-builddeb qbzr \
 		pbuilder-scripts \
+		dh-make \
+		cmake \
 		gtkterm \
-		dh-make
+		quicksynergy
 
 Phone:
 	ubuntu-device-flash
