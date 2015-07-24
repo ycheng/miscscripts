@@ -6,9 +6,16 @@ Standard:
 		dh-make \
 		cmake \
 		gtkterm \
-		quicksynergy
+		quicksynergy \
+		ubuntu-dev-tools devscripts fakeroot \
+		sbuild schroot \
+		libc6-dev-armhf-cross gcc-arm-linux-gnueabihf \
+		qemu-user-static
+
+
 
 Phone:
+	ppa ?
 	ubuntu-device-flash
 
 Android web page:

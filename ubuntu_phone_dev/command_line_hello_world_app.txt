@@ -1,0 +1,29 @@
+
+# on trusty
+sudo add-apt-repository ppa:ubuntu-sdk-team/ppa
+sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt-get install phablet-tools
+
+sudo apt-get install click-dev schroot # ?
+
+sudo click chroot -a armhf -f ubuntu-sdk-15.04 create
+sudo click chroot -a armhf -f ubuntu-sdk-14.10 create
+
+
+click-buddy # click-buddy live in phablet-tools, which is a shell script itself.
+
+
+
+How to check content of click package:
+
+	$ ar -vc xxx.click
+	$ dpkg -c xxx.click
+
+
+How to install click package
+
+	$ pkcon --allow-untrusted install-local *.click
+
+Uninstall package
+
+	$ click unregister PACKAGE_NAME

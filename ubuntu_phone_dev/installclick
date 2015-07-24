@@ -1,0 +1,2 @@
+#! /bin/sh
+pkcon --allow-untrusted install-local $1
