@@ -3,3 +3,4 @@ prowlpy
 
 sudo apt-get install python-prowlpy
 
+sudo apt-get install gcin
