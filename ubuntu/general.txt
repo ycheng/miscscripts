@@ -3,4 +3,6 @@ prowlpy
 
 sudo apt-get install python-prowlpy
 
-sudo apt-get install gcin
+system load applet:
+	$ sudo apt-get install indicator-multiload
+	seach indicator in dash and click it to launch.

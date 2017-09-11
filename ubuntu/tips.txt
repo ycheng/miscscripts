@@ -1,6 +1,0 @@
-system load applet:
-
-	$ sudo apt-get install indicator-multiload
-
-	seach indicator in dash and click it to launch.
-
