@@ -1,0 +1,7 @@
+
+1. some bios does not have "enable legacy option rom"
+2. smbios-token-ctl
+ - is a python script.
+ - will stop when it find something wrong.
+     (TODO: add a new option that will just keep trying next)
+
