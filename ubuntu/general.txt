@@ -1,8 +1,4 @@
 
-prowlpy
-
-sudo apt-get install python-prowlpy
-
 system load applet:
-	$ sudo apt-get install indicator-multiload
+	$ sudo apt install indicator-multiload
 	seach indicator in dash and click it to launch.
