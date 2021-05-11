@@ -1,0 +1,12 @@
+= oem-scripts
+
+launchpad-api get people/+me
+  => same as: launchpad-api get devel/~ycheng-twn
+
+launchpad-api get devel/somerville/+bug/1888819
+launchpad-api get somerville ws.op==searchTasks
+
+resource_type_link => the resource type
+
+api ref: https://launchpad.net/+apidoc/
+
