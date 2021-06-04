@@ -10,3 +10,8 @@ resource_type_link => the resource type
 
 api ref: https://launchpad.net/+apidoc/
 
+LAUNCHPAD_TOKEN="::" launchpad-api get people/+me # anonymous access
+
+
+for get op, it's parameter is "==", ex ws.op==xxxx
+for post op, it's parameter is "=", ex ws.op=xxxx

@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # dependency: python-dbus
 
 def print_usage(cmd):
-    print "Usage: " + cmd + " { system | session} dbus_name"
-    print "\tfind owner process id for certain dbus_name"
+    print("Usage: " + cmd + " { system | session} dbus_name")
+    print("\tfind owner process id for certain dbus_name")
 
 import dbus
 import sys
@@ -27,4 +27,4 @@ try:
 except:
     pid = -1
 
-print pid
+print(pid)

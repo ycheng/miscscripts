@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -x
+
+if [ -z "$1" ] ; then
+  echo "Useage: $0 system|session busname"
+  exit 0
+fi
+
+dbus-send "--$1" --type=method_call --print-reply \
+      "--dest=$2" \
+      / \
+      org.freedesktop.DBus.Introspectable.Introspect
