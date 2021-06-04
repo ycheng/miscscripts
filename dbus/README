@@ -6,3 +6,6 @@ A:
     in system bus
 
     ref: https://wiki.ubuntu.com/DebuggingDBus
+
+Utilities:
+    $ busctl tree
