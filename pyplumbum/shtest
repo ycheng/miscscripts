@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo stdout output
+echo stderr output 1>&2
+exit 1
